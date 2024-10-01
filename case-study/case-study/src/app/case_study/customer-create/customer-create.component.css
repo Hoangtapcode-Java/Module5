@@ -1,0 +1,7 @@
+#input{
+  border: 1px solid;
+  box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75), 10px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border-radius:5px;
+  background-color: gainsboro;
+}

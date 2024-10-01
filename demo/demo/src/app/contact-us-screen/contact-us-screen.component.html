@@ -1,0 +1,123 @@
+<div class="header">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="150px">
+      <div>
+        <div class="sub">
+          <a href="/login" style="text-decoration: none; color: black"><i class="uil uil-user"></i> Đăng nhập</a>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+           aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="100px">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home"><i class="uil uil-estate"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/service"><i class="uil uil-dollar-sign"></i> Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/brand"><i class="uil uil-head-side"></i> Brand Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact"><i class="uil uil-phone"></i> Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="body">
+  <div class="img-container">
+    <img src="https://www.furama.com/images/nw_h_Contact.jpg" alt="0">
+  </div>
+</div>
+<section id="contact">
+
+  <h1 class="section-header">CONTACT US</h1>
+
+  <div class="contact-wrapper">
+
+    <!-- Left contact page -->
+
+    <form id="contact-form" class="form-horizontal" role="form">
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+      <!--            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">-->
+      <!--                <div class="alt-send-button">-->
+      <!--                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>-->
+      <!--                </div>-->
+      <!--            </button>-->
+      <button class="send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      </button>
+
+    </form>
+
+    <!-- Left contact page -->
+
+    <div class="direct-contact-container">
+
+      <ul class="contact-list">
+        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+
+        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="#" title="Give me a call">(212) 555-2368</a></span></i></li>
+
+        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="#" title="Send me an email">Furama@gmail.com</a></span></i></li>
+
+      </ul>
+
+      <hr>
+      <ul class="social-media-list">
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="uil uil-facebook-f"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="uil uil-instagram-alt"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="uil uil-twitter"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="uil uil-telegram"></i></a>
+        </li>
+      </ul>
+      <hr>
+
+      <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+    </div>
+
+  </div>
+
+</section>

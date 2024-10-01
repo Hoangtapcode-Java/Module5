@@ -1,0 +1,100 @@
+<div class="header">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="150px">
+      <div>
+        <div class="sub">
+          <a><i class="uil uil-user"></i> Users</a>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+           aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="100px">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/profile"><i class="uil uil-estate"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/service-manager"><i class="uil uil-dollar-sign"></i> Service Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/customer-list"><i class="uil uil-head-side"></i> Customer Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contract-list"><i class="uil uil-phone"></i> Contract Manager</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div>
+</div>
+<div class="my-container">
+  <div class="form">
+    <h2 class="mb-3" style="text-align: center; margin-top: 60px">Chỉnh Sửa Khách Hàng</h2>
+    <hr>
+    <form class="form-group" [formGroup]="reactiveForm" (ngSubmit)="update()" *ngIf="reactiveForm">
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <label for="id" class="form-label">Mã khách hàng:</label>
+          <input type="text" class="form-control" id="id" formControlName="id" disabled>
+        </div>
+        <div class="col-sm-6">
+          <label for="inputName" class="form-label">Tên khách hàng:</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Nguyễn Văn A"
+                 formControlName="nameCustomer">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <label for="gender" class="form-label">Giới tính:</label>
+          <input type="text" class="form-control" id="gender" placeholder="Nam/Nữ" formControlName="gender">
+        </div>
+        <div class="col-sm-6">
+          <label for="address" class="form-label">Địa chỉ:</label>
+          <input type="text" class="form-control" id="address" placeholder="Đà Nẵng" formControlName="address">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <label for="inputDateBegin" class="form-label">Ngày sinh:</label>
+          <input type="date" class="form-control" id="inputDateBegin" placeholder="25/02/2023"
+                 formControlName="dateOfBirth">
+        </div>
+        <div class="col-sm-6">
+          <label for="inputDateEnd" class="form-label">CMND:</label>
+          <input type="text" class="form-control" id="inputDateEnd" placeholder="201905468" formControlName="idCard">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <label for="email" class="form-label">Email:</label>
+          <input type="text" class="form-control" id="email" placeholder="ABC@gmail.com" formControlName="email">
+        </div>
+        <div class="col-sm-6">
+          <label for="phone" class="form-label">Số điện thoại:</label>
+          <input type="text" class="form-control" id="phone" placeholder="0905456789" formControlName="phoneNumber">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <button class="btn btn-secondary" type="reset">Hủy</button>
+        <button class="btn btn-success" type="submit">Thêm mới</button>
+      </div>
+    </form>
+  </div>
+</div>

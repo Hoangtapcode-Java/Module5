@@ -1,0 +1,80 @@
+<div class="header">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="150px">
+      <div>
+        <div class="sub">
+          <a><i class="uil uil-user-circle"></i> Users</a>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+           aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="100px">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/profile"><i class="uil uil-estate"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/service-manager"><i class="uil uil-dollar-sign"></i> Service Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/customer-list"><i class="uil uil-head-side"></i> Customer Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contract-list"><i class="uil uil-phone"></i> Contract Manager</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="body">
+  <div class="img-header">
+    <img style="width: 100%; padding-top:30px; " src="https://www.furama.com/images/nw_h_MeetingsOccasions.jpg" alt="0">
+  </div>
+  <div class="table-container">
+    <div class="logo">
+      <h2 style="text-align: center; font-weight: bold; font-size: 30px">Danh Sách Hợp Đồng</h2>
+    </div>
+    <div class="addNew">
+      <button class="btn btn-warning"><a href="/contract-create" style="color: white;text-decoration: none">Thêm mới hợp đồng</a></button>
+    </div>
+    <table class="table table-striped">
+      <thead class="thead">
+      <tr>
+        <th>Mã hợp đồng</th>
+        <th>Tên khách hàng</th>
+        <th>Tên dịch vụ</th>
+        <th>Ngày làm hợp đồng</th>
+        <th>Ngày kết thúc hợp đồng</th>
+        <th>Xóa hợp đồng</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let contract of contracts">
+        <td>{{contract.id}}</td>
+        <td>{{contract.customer.nameCustomer}}</td>
+        <td>{{contract.service.nameService}}</td>
+        <td>{{contract.dateBegin}}</td>
+        <td>{{contract.dateEnd}}</td>
+        <td><button class="btn btn-danger" [routerLink]="['/contract/delete',contract.id]">Xóa</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

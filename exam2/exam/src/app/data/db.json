@@ -1,0 +1,22 @@
+{
+  "student": [
+    {
+      "id": 2,
+      "name": "Văn An 1231231",
+      "nameGroup": "Nhóm 2",
+      "nameSubject": "ádasda",
+      "teacher": "Nguyễn Thị A",
+      "email": "huy@gmail.com",
+      "phoneNumber": "0935530198"
+    },
+    {
+      "id": 3,
+      "name": "Anh Huy",
+      "nameGroup": "Nhóm 3",
+      "nameSubject": "ádasda",
+      "teacher": "Nguyễn Thị C",
+      "email": "huy@gmail.com",
+      "phoneNumber": "0935530198"
+    }
+  ]
+}

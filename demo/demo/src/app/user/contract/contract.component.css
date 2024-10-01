@@ -1,0 +1,62 @@
+label {
+  font-weight: bold;
+}
+.my-container {
+  margin-top: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 10px #aaa;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+* {
+  font-family: "Roboto Light";
+  font-size: 15px;
+}
+
+.my-table{
+  margin: 20px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination .text {
+  font-size: 16px;
+}
+
+.pagination .text1 {
+  font-size: 26px;
+}
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+/* thiết lập style cho class active */
+.pagination a.active {
+  background: var(--nc-primary-gradient);
+  color: #fff;
+}
+/* thêm màu nền khi người dùng hover vào class không active */
+.pagination a:hover:not(.active) {
+  background-color: var(--nc-primary-bg);
+  opacity: .9;
+  color: #000 !important;
+}
+
+.form{
+  margin-right:20px ;
+  margin-left:20px ;
+}
+
+
+
+

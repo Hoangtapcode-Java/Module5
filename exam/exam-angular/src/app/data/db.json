@@ -1,0 +1,27 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "Võ Văn Hoàng",
+      "nameSubjects": "dsffsdf",
+      "nameGroup" : "Nhóm 1",
+      "email" : "vanhoang@gmail.com",
+      "phoneNumber" : "0935530198"
+    }
+  ],
+  "teacher": [
+    {
+      "id": 1,
+      "nameTeacher": "Lê Văn A"
+    },
+    {
+      "id" : 2,
+      "nameTeacher" : "Huỳnh Thị B"
+    },
+    {
+      "id": 3,
+      "nameTeacher": "Võ Thị C"
+    }
+  ]
+
+}

@@ -1,0 +1,40 @@
+.img-container img{
+  width: 100%;
+  padding-top: 50px;
+  height: auto;
+}
+
+.body-top{
+  margin: 50px;
+}
+
+.body-top H2{
+  font-weight: bold;
+}
+
+.body-top p {
+  /*margin: 20px;*/
+  text-align: center;
+}
+
+.body-content{
+  margin-left: 50px;
+}
+.body-content p{
+  text-align: left;
+}
+
+.body-box{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.body-box h6,p{
+  text-align: left;
+}
+
+span{
+  color: #af936c;
+  font-weight: bolder;
+}
+

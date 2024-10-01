@@ -1,0 +1,96 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Võ Văn Hoàng",
+      "dateOfBirth": "2023-03-29",
+      "gender": "Nam",
+      "idCard": "201901565",
+      "phoneNumber": 935530198,
+      "email": "vanhoang132003@gmail.com",
+      "address": "Quảng Trị",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Huy",
+      "dateOfBirth": "2023-03-30",
+      "gender": "Nam",
+      "idCard": "0000935530198",
+      "phoneNumber": 935530198,
+      "email": "hoang@gmail.com",
+      "address": "Đà Nẵng",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Huy",
+      "dateOfBirth": "2023-04-03",
+      "gender": "Nam",
+      "phoneNumber": "0935530198",
+      "idCard": "0935530198",
+      "email": "vanhoang@gmail.com",
+      "address": "Đà Nẵng",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Võ Văn Hoàng",
+      "dateOfBirth": "2023-03-27",
+      "gender": "Nam",
+      "phoneNumber": "0935530198",
+      "idCard": "0000935530198",
+      "email": "vanhoang@gmail.com",
+      "address": "Quảng Nam",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Võ Văn Hoàng",
+      "dateOfBirth": "2023-06-01",
+      "gender": "Nam",
+      "phoneNumber": "K79/1B Dũng Sĩ Thanh Khê, Tổ 37",
+      "idCard": "0935530198",
+      "email": "hoang@gmail.com",
+      "address": "550000",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ]
+}

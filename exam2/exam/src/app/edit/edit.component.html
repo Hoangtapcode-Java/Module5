@@ -1,0 +1,50 @@
+<div id="input" class="container"
+     style="border: 1px solid; box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75), 10px 0px 10px -5px rgba(0, 0, 0, 0.75); padding: 10px; border-radius:5px">
+  <h3>Infor Student</h3>
+  <form class="row g-3" [formGroup]="reactiveForm" (ngSubmit)="update()" *ngIf="studentService">
+    <div class="col-md-6">
+      <label for="inputId" class="form-label">Id</label>
+      <input type="text" class="form-control" id="inputId" formControlName="id" readonly>
+    </div>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Name</label>
+      <p style="color: red" *ngIf="reactiveForm.controls.name.hasError('required')&&reactiveForm.controls.name.dirty">Không được để trống</p>
+      <input type="text" class="form-control" id="inputEmail4" formControlName="name">
+    </div>
+    <div class="col-md-3">
+      <label for="inputPassword4" class="form-label">NameGroup</label>
+      <p style="color: red" *ngIf="reactiveForm.controls.nameGroup.hasError('required')&&reactiveForm.controls.nameGroup.dirty">Không được để trống</p>
+      <input type="text" class="form-control" id="inputPassword4" formControlName="nameGroup">
+    </div>
+    <div class="col-6">
+      <label for="inputAddress" class="form-label">NameSubject</label>
+      <p style="color: red" *ngIf="reactiveForm.controls.nameSubject.hasError('required')&&reactiveForm.controls.nameSubject.dirty">Không được để trống</p>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" formControlName="nameSubject">
+    </div>
+    <div class="col-6">
+      <label for="inputAddress2" class="form-label">Email</label>
+      <p style="color: red" *ngIf="reactiveForm.controls.email.hasError('pattern')&&reactiveForm.controls.email.dirty">Không đúng định dạng</p>
+      <p style="color: red" *ngIf="reactiveForm.controls.email.hasError('required')&&reactiveForm.controls.email.dirty">Không được để trống</p>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" formControlName="email">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Teacher</label>
+      <p style="color: red" *ngIf="reactiveForm.controls.teacher.hasError('required')&&reactiveForm.controls.teacher.dirty">Không được để trống</p>
+      <select  id="inputState" class="form-select" formControlName="teacher">
+        <option value="Nguyễn Văn A">Nguyễn Văn A</option>
+        <option value="Nguyễn Văn B">Nguyễn Văn B</option>
+        <option value="Nguyễn Văn C">Nguyễn Văn C</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">PhoneNumber</label>
+      <p style="color: red" *ngIf="reactiveForm.controls.phoneNumber.hasError('pattern')&&reactiveForm.controls.phoneNumber.dirty">Số điện thoại không đúng định dạng</p>
+      <p style="color: red" *ngIf="reactiveForm.controls.phoneNumber.hasError('required')&&reactiveForm.controls.phoneNumber.dirty">Không được để trống</p>
+      <input type="text" class="form-control" id="inputZip" formControlName="phoneNumber">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-secondary" routerLink="/student">Cancle</button>
+    </div>
+  </form>
+</div>

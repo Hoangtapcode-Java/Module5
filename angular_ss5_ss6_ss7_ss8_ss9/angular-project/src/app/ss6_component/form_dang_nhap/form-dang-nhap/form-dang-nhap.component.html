@@ -1,0 +1,22 @@
+<form [formGroup]="reactiveForm" (ngSubmit)="login()">
+  <table>
+    <tr>
+      <td>
+        Email:
+      </td>
+      <td>
+        <input type="text" formControlName="email">
+      </td>
+      <p style="color: red" *ngIf="reactiveForm.controls.email.hasError('pattern')&&reactiveForm.controls.email.dirty">Không đúng định dạng</p>
+      <p style="color: red" *ngIf="reactiveForm.controls.email.hasError('required')&&reactiveForm.controls.email.dirty">Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input type="text" formControlName="password"></td>
+      <p style="color: red" *ngIf="reactiveForm.controls.password.hasError('required')&&reactiveForm.controls.password.dirty">Không được để trống</p>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Đăng kí"></td>
+    </tr>
+  </table>
+

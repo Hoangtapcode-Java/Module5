@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>English</th>
+    <th>Detail</th>
+  </tr>
+  <tr *ngFor="let dictionaries of dictionary">
+    <td>{{dictionaries.id}}</td>
+    <td>{{dictionaries.english}}</td>
+    <td>
+      <a [routerLink]="['/detail',dictionaries.id]">Detail</a>
+    </td>
+  </tr>
+</table>

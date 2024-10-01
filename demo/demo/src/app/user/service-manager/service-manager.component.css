@@ -1,0 +1,99 @@
+.header {
+  margin-bottom: 20px !important;
+}
+
+.body {
+  margin-top: 20px !important;
+}
+
+.body .logo{
+  margin-top: 70px;
+}
+
+.container {
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+.card-main {
+  width: 309px;
+  height: 370px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 1rem 3rem rgba(104, 102, 102, 0.175);
+
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #edebeb80;
+  transition: opacity .4s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.form-book {
+  width: 100%;
+  height: 400px;
+  background-image: url('https://www.furama.com/assets/international/images/reservation/main-banner.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.edit_a {
+  color: black;
+  border: solid 1px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: small;
+  background-color: #fff;
+  padding: 10px 30px;
+}
+
+.edit_a:hover {
+  background-color: #af936c;
+  border: 1px solid #af936c;
+  color: #fff;
+}
+
+
+
+
+
+
+

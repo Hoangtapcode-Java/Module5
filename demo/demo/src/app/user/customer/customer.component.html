@@ -1,0 +1,105 @@
+<div class="header">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="150px">
+      <div>
+        <div class="sub">
+          <a><i class="uil uil-user"></i> Users</a>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+           aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="100px">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/profile"><i class="uil uil-estate"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/service-manager"><i class="uil uil-dollar-sign"></i>
+                Service Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/customer-list"><i class="uil uil-head-side"></i> Customer Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contract-list"><i class="uil uil-phone"></i> Contract Manager</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="form-book"></div>
+<div>
+  <div class="text-right">
+    <button class="btn btn-primary" style="margin: 20px !important;"><a style="text-decoration: none; color: white" href="/customer-create">Thêm Mới
+      Khách Hàng</a></button>
+  </div>
+  <div class="body">
+    <div class="col-md-12">
+      <div class="card-body">
+        <table class="table table-bordered table-hover">
+          <thead>
+          <tr>
+            <!--            <th class="text-center">Mã Khách Hàng</th>-->
+            <!--            <th class="text-center">Họ Và Tên</th>-->
+            <!--            <th class="text-center">Giới tính</th>-->
+            <!--            <th class="text-center">Ngày sinh</th>-->
+            <!--            <th class="text-center">CMND</th>-->
+            <!--            <th class="text-center">Email</th>-->
+            <!--            <th class="text-center">Điện thoại</th>-->
+            <!--            <th class="text-center">Địa chỉ</th>-->
+            <!--            <th class="text-center">Xóa</th>-->
+            <!--            <th class="text-center">Sửa</th>-->
+            <th>Mã Khách Hàng</th>
+            <th>Họ Và Tên</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>CMND</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Địa chỉ</th>
+            <th colspan="3">Chức năng</th>
+            <!--            <th >Sửa</th>-->
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let c of customers">
+            <td>{{c.id}}</td>
+            <td>{{c.nameCustomer}}</td>
+            <td>{{c.gender}}</td>
+            <td>{{c.dateOfBirth}}</td>
+            <td>{{c.idCard}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.phoneNumber}}</td>
+            <td>{{c.address}}</td>
+            <td>
+              <button class="btn btn-danger" [routerLink]="['/customer-list/delete',c.id]">Xóa</button>
+<!--            </td>-->
+<!--            <td>-->
+              <button class="btn btn-primary" [routerLink]="['/customer/update',c.id]">Sửa</button>
+              <button class="btn btn-secondary" *ngIf="c.status === 'Đang chờ'">Thêm hợp đồng</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,35 @@
+<button class="btn btn-danger" routerLink="/create">Create</button>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Descriptions</th>
+    <th>Category</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let p of product" >
+    <td>
+      {{p.id}}
+    </td>
+    <td>
+      {{p.name}}
+    </td>
+    <td>
+      {{p.price}}
+    </td>
+    <td>
+      {{p.descriptions}}
+    </td>
+    <td>
+      {{p.category.nameCategory}}
+    </td>
+    <td>
+      <a [routerLink]="['/update',p.id]">Edit</a>
+    </td>
+    <td>
+      <a [routerLink]="['/delete',p.id]" >Delete</a>
+    </td>
+  </tr>
+</table>

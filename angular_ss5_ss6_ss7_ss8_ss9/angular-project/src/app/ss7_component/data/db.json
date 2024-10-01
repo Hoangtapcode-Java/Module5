@@ -1,0 +1,38 @@
+{
+  "product": [
+    {
+      "id": 4,
+      "name": "sfds",
+      "price": 12323,
+      "descriptions": "13",
+      "category": {
+        "id": 1,
+        "nameCategory": "Apple"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Samsung",
+      "price": 123,
+      "descriptions": "sada",
+      "category": {
+        "id": 3,
+        "nameCategory": "Xiaomi"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "nameCategory": "Apple"
+    },
+    {
+      "id": 2,
+      "nameCategory": "Samsung"
+    },
+    {
+      "id": 3,
+      "nameCategory": "Xiaomi"
+    }
+  ]
+}

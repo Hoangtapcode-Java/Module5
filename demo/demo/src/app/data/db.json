@@ -1,0 +1,165 @@
+{
+  "contract": [
+    {
+      "id": 1,
+      "customer": {
+        "id": 2,
+        "nameCustomer": "Trương Quang Huy",
+        "dateOfBirth": "2023-05-10",
+        "gender": "Nam",
+        "phoneNumber": "0935530198",
+        "idCard": "2354654",
+        "email": "huytran@gmail.com",
+        "address": "K79/1B DUNG SI THANH KHE"
+      },
+      "service": {
+        "id": 2,
+        "nameService": "Hotel Badroom",
+        "amount": 10,
+        "price": 4000000
+      },
+      "dateBegin": "2023-05-31",
+      "dateEnd": "2023-06-08"
+    },
+    {
+      "id": 2,
+      "customer": {
+        "id": 1,
+        "nameCustomer": "Khánh Vy",
+        "dateOfBirth": "2023-05-28",
+        "gender": "Nữ",
+        "phoneNumber": "0935530198",
+        "idCard": "2354654",
+        "email": "dsadsad",
+        "address": "K79/1B Dũng Sĩ Thanh Khê, Tổ 37"
+      },
+      "service": {
+        "id": 1,
+        "nameService": "Villa",
+        "amount": 10,
+        "price": 4000000
+      },
+      "dateBegin": "2023-05-03",
+      "dateEnd": "2023-05-09"
+    },
+    {
+      "id": 4,
+      "customer": {
+        "id": 2,
+        "nameCustomer": "Trần Thế Anh",
+        "dateOfBirth": "2002-01-01",
+        "gender": "Nam",
+        "phoneNumber": "0935530789",
+        "idCard": "201985856",
+        "email": "huytran@gmail.com",
+        "address": "Đà Nẵng",
+        "status": "Đã đặt"
+      },
+      "service": {
+        "id": 4,
+        "nameService": "Fitness Center",
+        "amount": 10,
+        "price": 4000000
+      },
+      "dateBegin": "2023-06-06",
+      "dateEnd": "2023-06-07"
+    }
+  ],
+  "service": [
+    {
+      "id": 1,
+      "img": "https://toohotel.com/wp-content/uploads/2022/09/TOO_Hotel_Suite_Bathroom_Panoramique.jpg",
+      "nameService": "Villa",
+      "amount": 10,
+      "price": 4000000
+    },
+    {
+      "id": 3,
+      "img": "https://toohotel.com/wp-content/uploads/2022/09/TOO_Hotel_Suite_Bathroom_Panoramique.jpg",
+      "nameService": "Spa Relax",
+      "amount": 10,
+      "price": 4000000
+    },
+    {
+      "id": 4,
+      "img": "https://toohotel.com/wp-content/uploads/2022/09/TOO_Hotel_Suite_Bathroom_Panoramique.jpg",
+      "nameService": "Fitness Center",
+      "amount": 10,
+      "price": 4000000
+    },
+    {
+      "id": 5,
+      "img": "https://toohotel.com/wp-content/uploads/2022/09/TOO_Hotel_Suite_Bathroom_Panoramique.jpg",
+      "nameService": "Pool",
+      "amount": 10,
+      "price": 4000000
+    },
+    {
+      "id": 6,
+      "img": "https://toohotel.com/wp-content/uploads/2022/09/TOO_Hotel_Suite_Bathroom_Panoramique.jpg",
+      "nameService": "Surfing Canoe",
+      "amount": 10,
+      "price": 4000000
+    },
+    {
+      "id": 7,
+      "img": "https://toohotel.com/wp-content/uploads/2022/09/TOO_Hotel_Suite_Bathroom_Panoramique.jpg",
+      "nameService": "Buffet Food And Drink",
+      "amount": 10,
+      "price": 4000000
+    },
+    {
+      "id": 8,
+      "img": "https://toohotel.com/wp-content/uploads/2022/09/TOO_Hotel_Suite_Bathroom_Panoramique.jpg",
+      "nameService": "Wedding Party",
+      "amount": 10,
+      "price": 4000000
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "nameCustomer": "Khánh Vy",
+      "dateOfBirth": "2023-06-15",
+      "gender": "Nữ",
+      "phoneNumber": "dsdasdsa",
+      "idCard": "sadasdasdsadasdsadas",
+      "email": "sadasdsad",
+      "address": "sdasdassdasd",
+      "status": "Đã đặt"
+    },
+    {
+      "id": 2,
+      "nameCustomer": "Trần Thế Anh",
+      "dateOfBirth": "2002-01-01",
+      "gender": "Nam",
+      "phoneNumber": "0935530789",
+      "idCard": "201985856",
+      "email": "huytran@gmail.com",
+      "address": "Đà Nẵng",
+      "status": "Đã đặt"
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "nameEmployee": "Võ Văn Hoàng",
+      "gender": "Nam",
+      "phoneNumber": "0935564789",
+      "email": "huytran@gmail.com",
+      "address": "Quảng Nam"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "account": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "account": "user",
+      "password": "user123"
+    }
+  ]
+}

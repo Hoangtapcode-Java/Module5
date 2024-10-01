@@ -1,0 +1,67 @@
+<div class="header">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="150px">
+      <div>
+        <div class="sub">
+          <a href="/login" style="text-decoration: none; color: black"><i class="uil uil-user"></i> Đăng nhập</a>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+           aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="100px">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home"><i class="uil uil-estate"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/service"><i class="uil uil-dollar-sign"></i> Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/brand"><i class="uil uil-head-side"></i> Brand Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact"><i class="uil uil-phone"></i> Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="form-login">
+  <div class="wrap-form-login">
+    <div class="frame">
+      <div class="logo">Login Furama</div>
+      <div class="wrap-content">
+        <form [formGroup]="reactiveForm" (ngSubmit)="sigin()">
+          <div class="wrap-input">
+            <div class="wrap-phone-input">
+              <input class="input input--medium" type="text" formControlName="account" placeholder="Enter user name" value="">
+            </div>
+
+            <div class="wrap-password-input">
+              <input class="input input--medium" type="password" formControlName="password" placeholder="Enter password" value="">
+            </div>
+          </div>
+          <div class="wrap-button-login">
+            <button class="button solid-button login-sign-in-form__submit solid-button--primary button--medium" type="submit">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

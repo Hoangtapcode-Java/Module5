@@ -1,0 +1,129 @@
+/*.sub{*/
+/*    background-color: black;*/
+/*}*/
+.header {
+  /*margin-top: 20px;*/
+}
+
+.body .slide{
+  padding-top: 50px;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+.content{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.content > h2 {
+  font-weight: bold;
+}
+
+.img-label {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.img-label img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-label .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+.img-join{
+  clear: both;
+}
+
+.img-join {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-join img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+
+}
+
+.label-join {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  color: white;
+  padding: 20px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.label-join h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.label-join p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.img-bottom{
+  clear: both;
+}
+
+.img-bottom .content-img{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.img-local {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-local img {
+  width: 40%; /* Đảm bảo mỗi ảnh chiếm 50% chiều rộng của container */
+  height: 300px; /* Đảm bảo tỷ lệ khung hình của ảnh không bị biến đổi */
+  margin: 20px; /* Khoảng cách giữa các ảnh */
+}
+
+.content-label{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Open Sans',sans-serif;
+  text-decoration: none;
+}
+.content-label a{
+  text-decoration: none;
+  color:#af936c;
+}
+
+.content-label a:hover{
+  text-decoration: none;
+  color:#af936c;
+}

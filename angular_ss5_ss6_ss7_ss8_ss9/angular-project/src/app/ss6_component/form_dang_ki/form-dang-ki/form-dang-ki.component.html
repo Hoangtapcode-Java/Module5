@@ -1,0 +1,61 @@
+<form [formGroup]="reactiveForm" (ngSubmit)="addNewUser()">
+  <table>
+    <tr>
+      <td>
+        Email:
+      </td>
+      <td>
+        <input type="text" formControlName="email">
+      </td>
+      <p style="color: red" *ngIf="reactiveForm.controls.email.hasError('pattern')&&reactiveForm.controls.email.dirty">Không đúng định dạng</p>
+      <p style="color: red" *ngIf="reactiveForm.controls.email.hasError('required')&&reactiveForm.controls.email.dirty">Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input type="text" formControlName="password"></td>
+      <p style="color: red" *ngIf="reactiveForm.controls.password.hasError('required')&&reactiveForm.controls.password.dirty">Không được để trống</p>
+    </tr>
+    <tr>
+      <td>ConfirmPassword:</td>
+      <td><input type="text" formControlName="confirmPassword"></td>
+      <p style="color: red" *ngIf="reactiveForm.controls.confirmPassword.hasError('required')&&reactiveForm.controls.confirmPassword.dirty">Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" formControlName="age"></td>
+      <p style="color: red" *ngIf="reactiveForm.controls.age.hasError('min')&&reactiveForm.controls.age.dirty">Tuổi phải lớn hơn 18</p>
+      <p style="color: red" *ngIf="reactiveForm.controls.age.hasError('required')&&reactiveForm.controls.age.dirty">Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+<!--      <td><input type="text" formControlName="gender"></td>-->
+      <td>
+        <input type="radio" formControlName="gender" value="Nam">Nam
+        <input type="radio" formControlName="gender" value="Nữ">Nữ
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Country:
+      </td>
+      <td>
+        <select formControlName="country">
+            <option selected>Choose here</option>
+            <option value="Đà Nẵng">Đà Nẵng</option>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+        </select>
+      </td>
+      <p style="color: red" *ngIf="reactiveForm.controls.country.hasError('required')&&reactiveForm.controls.country.dirty">Không được để trống</p>
+<!--      <td><input type="text" formControlName="country"></td>-->
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td><input type="text" formControlName="phone"></td>
+      <p style="color: red" *ngIf="reactiveForm.controls.phone.hasError('required')&&reactiveForm.controls.phone.dirty">Không được để trống</p>
+      <p style="color: red" *ngIf="reactiveForm.controls.phone.hasError('pattern')&&reactiveForm.controls.phone.dirty">Không đúng định dạng</p>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Đăng kí"></td>
+    </tr>
+  </table>

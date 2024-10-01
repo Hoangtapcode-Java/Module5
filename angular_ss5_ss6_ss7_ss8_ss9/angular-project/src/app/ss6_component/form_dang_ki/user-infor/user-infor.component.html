@@ -1,0 +1,20 @@
+<table border="1">
+  <tr>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Phone</th>
+    <th>Country</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.email}}</td>
+    <td >{{user.password}}</td>
+    <td >{{user.age}}</td>
+    <td >{{user.gender}}</td>
+    <td >{{user.phone}}</td>
+    <td >{{user.country}}</td>
+  </tr>
+</table>
+<br>
+<app-form-dang-ki (eventEmmit)="addNewUser($event)"></app-form-dang-ki>

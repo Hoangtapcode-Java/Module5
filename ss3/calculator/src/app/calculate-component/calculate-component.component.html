@@ -1,0 +1,27 @@
+
+<table>
+  <tr>
+    <td colspan="2">
+      <input type="number" #num1>
+    </td>
+    <td colspan="2">
+      <input type="number" #num2>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button class="btn btn-danger" (click)="plus(num1.value,num2.value)">+</button>
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="tru(num1.value,num2.value)">-</button>
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="nhan(num1.value,num2.value)">*</button>
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="chia(num1.value,num2.value)">/</button>
+    </td>
+  </tr>
+
+</table>
+<p>{{result}}</p>

@@ -1,0 +1,108 @@
+<div class="header">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="150px">
+      <div>
+        <div class="sub">
+          <a><i class="uil uil-user-circle"></i> Users</a>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" width="100px">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/profile"><i class="uil uil-estate"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/service-manager"><i class="uil uil-dollar-sign"></i>
+                Service Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/customer-list"><i class="uil uil-head-side"></i> Customer Manager</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contract-list"><i class="uil uil-phone"></i> Contract Manager</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- <div class="body">
+  <div class="logo">
+    <h2 style="text-align: center">Danh Sách Dịch Vụ</h2>
+  </div>
+  <table class="table table-striped">
+    <thead class="thead">
+    <tr>
+      <th>Mã dịch vụ</th>
+      <th>Tên dịch vụ</th>
+      <th>Số lượng còn lại</th>
+      <th>Số tiền</th>
+      <th>Chức năng</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let service of services">
+      <td>{{service.id}}</td>
+      <td>{{service.nameService}}</td>
+      <td>{{service.amount}}</td>
+      <td>{{service.price | currency: 'VND'}}</td>
+      <td><button class="btn btn-danger" [routerLink]="['/service-manager/delete',service.id]">Xóa</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<div class="form-book">
+</div>
+
+
+
+<div style="margin-top: 20px;" class="d-flex justify-content-center align-items-center flex-column">
+  <form style="border-top: 1px solid; padding-top: 10px;" [formGroup]="searchs" class="mb-3">
+    <input placeholder="Enter your name here" style="height: 40px; border-color: rgb(48, 47, 47);"
+      formControlName="nameService" name="nameService">
+    <button class="edit_a" type="submit" (click)="searchForm()" style="margin-left: 10px;">
+      <i class="bi bi-search"></i> SEARCH
+    </button>
+    <button class="edit_a" (click)="reset()" style="margin-left: 10px;">
+      <i class="bi bi-arrow-counterclockwise"></i> RESET
+    </button>
+    <button class="edit_a" routerLink="" style="margin-left: 10px;">
+      <i class="bi bi-arrow-left"></i> BACK
+    </button>
+  </form>
+</div>
+
+<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="container">
+  <div class="card-main" *ngFor="let service of services ">
+    <div class="card">
+      <img [src]="service.img">
+      <div class="overlay">
+        <div class="icons">
+          <button class="btn btn-danger" [routerLink]="['/service-manager/delete',service.id]">Xóa</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-title">
+      <p><b>Mã Dịch Vụ:</b> {{service.id}}</p>
+      <p><b>Tên Dịch Vụ:</b> {{service.nameService}}</p>
+      <p><b>Số Lượng Còn Lại:</b> {{service.amount}}</p>
+      <p style="color: orange;"><b>Giá Tiền:</b> {{ service.price | currency: 'VNĐ' }}</p>
+    </div>
+  </div>
+</div>
